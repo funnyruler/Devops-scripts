@@ -1,7 +1,7 @@
 #!/bin/bash
-sudo apt update
-sudo apt install postgresql postgresql-contrib
-sudo systemctl start postgresql.service
+apt update
+apt install postgresql postgresql-contrib
+systemctl start postgresql.service
 
 service_name="postgresql"
 if systemctl is-active --quiet "$service_name.service" ; then
